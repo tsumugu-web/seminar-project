@@ -1,9 +1,6 @@
 {
   "name": "Claude Code Seminar Sandbox",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": {
-    "ghcr.io/devcontainers/features/node:1": {},
-    "ghcr.io/anthropics/devcontainer-features/claude-code:1": {}
-  },
-  "remoteUser": "vscode"
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+  "postCreateCommand": "sudo npm install -g @anthropic-ai/claude-code",
+  "remoteUser": "node"
 }
